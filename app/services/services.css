@@ -1,0 +1,65 @@
+@import '../global.css';
+.card {
+  width: 40%;
+  width: 23rem;
+  height: 24rem;
+  margin-top: 10px;
+}
+#main-collapse {
+  margin-top: 20px;
+  width: 80%;
+  margin-left: 19%;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.container {
+  padding: 2px 16px;
+}
+.position {
+  display: flex;
+  align-items: center;
+}
+.card-body {
+  background-color: black;
+}
+.card-title {
+  color: white;
+}
+.content {
+  margin: 16px;
+  width: 81%;
+}
+.card-img-top {
+  height: 59%;
+}
+/* Media query for bigger tables or small laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .section-container-spacer {
+    margin-right: 7.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .align {
+    margin-left: 7%;
+    margin-right: 5%;
+  }
+}
+@media (width: 768px) {
+  .section-container-spacer {
+    width: 20rem;
+  }
+}
+/* Media query for tablets */
+@media (min-width: 600px) and (max-width: 768px) {
+  .container {
+    width: 109%;
+    margin-left: 11%;
+  }
+}
+/* Media query for small devices */
+@media only screen and (max-width: 500px) {
+  .align {
+    margin-left: 16%;
+  }
+}

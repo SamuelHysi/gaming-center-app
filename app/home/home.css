@@ -1,0 +1,43 @@
+@import '../global.css';
+.grid {
+    --n: 3;
+    --m: 4;
+    --s: 277px;
+    --g: 10px;
+    --f: 0.4;
+    display: grid;
+    gap: var(--g);
+    height: calc(var(--n)*var(--s) + (var(--n) - 1)*var(--g));
+    grid-template-columns: repeat(var(--m), auto);
+}
+.grid-item img {
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .35s linear;
+}
+.grid-item img:hover {
+    width: calc(var(--s)*var(--f));
+    height: calc(var(--s)*var(--f));
+}
+/* Media query for bigger tables or small laptops */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+/* Media query for tablets */
+@media (min-width: 600px) and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+/* Media query for small devices */
+@media only screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(1, auto);
+    }
+}

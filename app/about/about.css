@@ -1,0 +1,19 @@
+@import '../global.css';
+.img-responsive {
+    display: block;
+    max-width: 65%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+    margin: auto;
+}
+.images {
+    width: 50%;
+    margin-top: 10px;
+}
+@media (min-width: 300px) and (max-width: 650px) {
+    .about-container {
+        margin-left: 10%;
+    }
+}

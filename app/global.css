@@ -1,0 +1,84 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+.nav-container {
+    background-color: #34abeb;
+    position: fixed;
+    height: 100%;
+    width: 18%;
+    min-width: 100px;
+}
+ul.nav li a.nav-link {
+    color: black;
+}
+ul.nav li a.nav-link:hover {
+    color: #ff6360;
+}
+/* Testo perseri */
+ul.nav li a.nav-link:focus {
+    font-weight: 600;
+}
+.site-brand,
+.site-brand:visited,
+.site-brand:focus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 20%;
+    font-size: 20px;
+}
+.site-brand .site-logo {
+    width: 70%;
+    margin-bottom: 15%;
+}
+.site-brand:hover {
+    text-decoration: none;
+    color: #ff6360;
+    font-weight: 600;
+}
+#main-collapse {
+    margin: 16px;
+    width: 81%;
+    margin-left: 19%;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #ff6360;
+    border-color: #ff6360;
+}
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 8px 20px;
+    font-size: 14px;
+    line-height: 1.78;
+    border-radius: 50px;
+}
+h1 {
+    color: white;
+    font-weight: bold;
+}
+h3 {
+    color: white;
+    font-weight: bold;
+}
+h5 {
+    font-weight: bold;
+}
+p {
+    color: #34abeb;
+}

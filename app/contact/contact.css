@@ -1,0 +1,110 @@
+@import '../global.css';
+.content {
+  width: 100%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 2%;
+  margin-top: 4%;
+}
+p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.contact {
+  width: 40%;
+  margin-right: 3rem;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.list-style {
+  margin-bottom: 1rem;
+  color: rgb(150, 150, 150);
+}
+.icon {
+  margin-right: 10%;
+  color: #34abeb;
+}
+.icon:hover {
+  color: #ff6360;
+}
+a {
+  text-decoration: none;
+}
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #1c9e22;
+  color: white;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+@media (min-width: 300px) and (max-width: 490px) {
+  .content {
+    margin-left: 18%;
+  }
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .description {
+    width: 70%;
+  }
+  .contact {
+    width: 70%;
+    margin-bottom: 5%;
+  }
+}
